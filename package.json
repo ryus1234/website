@@ -13,7 +13,7 @@
     "watch:scripts": "watchify ./src/scripts/main.js -o ./dist/scripts/main.js -v -t babelify --debug",
     "watch": "npm run watch:html & npm run watch:scripts & npm run watch:styles",
     "serve": "browser-sync start --server dist --no-notify",
-    "clean": "rm -rf dist/* & mkdir dist/styles & mkdir dist/scripts",
+    "clean": "rm -rf dist/* && mkdir dist/styles & mkdir dist/scripts",
     "build": "npm run clean && npm run html & npm run styles & npm run scripts",
     "start": "npm run watch & npm run serve"
   },
@@ -33,6 +33,7 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
+    "bootstrap": "^4.0.0-alpha.2",
     "jquery": "^2.2.2",
     "sanitize.css": "^3.3.0"
   }
