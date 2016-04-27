@@ -15,7 +15,7 @@
     "serve": "browser-sync start --server dist --no-notify",
     "clean": "rm -rf dist/* & mkdir dist/styles & mkdir dist/scripts",
     "build": "npm run clean && npm run html & npm run styles & npm run scripts",
-    "start": "npm run watch & npm run serve"
+    "start": "npm run clean & npm run watch & npm run serve"
   },
   "author": "ryus",
   "license": "ISC",
